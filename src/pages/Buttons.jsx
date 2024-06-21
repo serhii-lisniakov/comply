@@ -3,7 +3,7 @@ import {useScript} from "../hooks/useScript.jsx";
 export const Buttons = () => {
     useScript('js/external/prism.js');
 
-    return <div className="bg-gray-100 flex-1 md:mt-16">
+    return <div className="bg-gray-100 flex-1 md:mt-6">
 
         <h1 className="h5">Buttons</h1>
         <p>Use cleopatra custom button styles for actions in forms, dialogs, and more with support for multiple sizes,

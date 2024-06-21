@@ -4,7 +4,7 @@ export const Alerts = () => {
     useScript('js/base/alert.js');
     useScript('js/external/prism.js');
 
-    return <div className="bg-gray-100 flex-1 md:mt-16">
+    return <div className="bg-gray-100 flex-1 md:mt-6">
 
         <h1 className="h5">alerts</h1>
         <p>Use cleopatra custom alerts styles for actions , notifcations etc.</p>
@@ -76,7 +76,7 @@ export const Alerts = () => {
             {/*</div>*/}
         </div>
 
-        <div className="card">
+        <div className="card mt-5">
 
             <div className="card-header">
                 simple alert - you can always use <span className="badge badge-primary">.alert</span> class along

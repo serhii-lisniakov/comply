@@ -3,7 +3,7 @@ import {useScript} from "../hooks/useScript.jsx";
 export const Typography = () => {
     useScript('js/external/prism.js');
 
-    return <div className="bg-gray-100 flex-1 md:mt-16">
+    return <div className="bg-gray-100 flex-1 md:mt-6">
 
         <h1 className="h5">Typography</h1>
         <p className="mt-3">Documentation and examples for typography, including global settings, headings, body text,

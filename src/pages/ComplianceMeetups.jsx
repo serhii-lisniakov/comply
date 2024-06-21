@@ -5,7 +5,7 @@ export const ComplianceMeetupsPage = () => {
     useScript('js/base/name.js');
     useScript('js/charts/summary.js');
 
-    return <div className="bg-gray-100 flex-1 p-6 md:mt-16">
+    return <div className="bg-gray-100 flex-1 p-6 md:mt-6">
 
         <div className="grid grid-cols-3 lg:grid-cols-1 gap-5">
             <div className="card col-span-1">

@@ -1,5 +1,5 @@
 export const EmailPage = () => {
-    return <div className="bg-gray-100 flex-1 md:mt-16 grid grid-cols-8">
+    return <div className="bg-gray-100 flex-1 md:mt-6 grid grid-cols-8">
 
         <div className="col-span-2 bg-white border rounded p-6 mr-8">
 
