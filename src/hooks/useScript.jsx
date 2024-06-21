@@ -8,7 +8,7 @@ export const useScript = url => {
 
         loadJs(url, {
             success: () => {
-                setScript(true)
+                // setScript(true)
             },
             async: true
         });
