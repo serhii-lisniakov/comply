@@ -8,18 +8,18 @@ export const NewsFeedPage = () => {
     }
 
     return <div>
-        <h2 className="text-4xl mb-6 sm:mt-3">News</h2>
+        <h2 className="text-lg font-bold tracking-wide mb-6 sm:mt-3">News</h2>
 
         <div className="grid gap-6 grid-cols-2 lg:grid-cols-1">
             {feed.items.map((item) => (
                 <div key={item.id} className="card border border-gray-200 rounded-lg shadow p-6">
-                    <h6 className="text-xl font-extrabold mb-2 normal-case">{item.title}</h6>
-                    <p className="mb-4 font-normal text-gray-500">
+                    <h2 className="text-lg font-extrabold mb-2 normal-case">{item.title}</h2>
+                    <p className="mb-4 font-normal text-gray-500 text-xs">
                         {item.category} | {item.pubDate}
                     </p>
-                    <p className="my-4 text-lg text-gray-500">{item.description?.split('\n')[1]}</p>
+                    <p className="my-4 text-gray-500 text-xs">{item.description?.split('\n')[1]}</p>
                     <a href={item.link} target="_blank" rel="noopener noreferrer"
-                       className="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline">
+                       className="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline">
                         Read more
                         <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
                              xmlns="http://www.w3.org/2000/svg"
