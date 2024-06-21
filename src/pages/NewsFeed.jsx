@@ -13,7 +13,7 @@ export const NewsFeedPage = () => {
         <div className="grid gap-6 grid-cols-2 lg:grid-cols-1">
             {feed.items.map((item) => (
                 <div key={item.id} className="card border border-gray-200 rounded-lg shadow p-6">
-                    <h2 className="text-lg font-extrabold mb-2 normal-case">{item.title}</h2>
+                    <h2 className="font-extrabold mb-2 normal-case">{item.title}</h2>
                     <p className="mb-4 font-normal text-gray-500 text-xs">
                         <span>{item.category}</span> | <span>{item.pubDate}</span>
                     </p>
