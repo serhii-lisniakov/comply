@@ -8,7 +8,6 @@ export const Sidebar = () => {
     return <div id="sideBar"
                 className="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64 md:-ml-64 md:fixed md:top-0 md:z-30 md:h-screen md:shadow-xl animated faster">
 
-
         <div className="flex flex-col">
 
             <div className="text-right hidden md:block mb-4">
