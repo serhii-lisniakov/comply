@@ -1,17 +1,18 @@
-import {useEffect, useState} from "react";
-import loadJs from 'loadjs';
+import {useEffect} from "react";
 
 export const useScript = url => {
-    const [script, setScript] = useState(null);
 
     useEffect(() => {
+        const script = document.createElement('script');
 
-        loadJs(url, {
-            success: () => {
-                // setScript(true)
-            },
-            async: true
-        });
+        script.src = url;
+        script.async = false;
 
-    }, [url, script]);
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        }
+
+    }, [url]);
 };
