@@ -21,7 +21,7 @@ export const NewsFeedPage = () => {
                         </p>
                         <p className="my-4 text-gray-500 text-xs">{item.description?.split('\n')[1]}</p>
                         <a href={item.link} target="_blank" rel="noopener noreferrer"
-                           className="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline">
+                           className="text-xs inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline">
                             Read more
                             <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg"
