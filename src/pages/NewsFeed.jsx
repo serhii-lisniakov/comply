@@ -15,7 +15,7 @@ export const NewsFeedPage = () => {
                 <div key={item.id} className="card border border-gray-200 rounded-lg shadow p-6">
                     <h2 className="text-lg font-extrabold mb-2 normal-case">{item.title}</h2>
                     <p className="mb-4 font-normal text-gray-500 text-xs">
-                        {item.category} | {item.pubDate}
+                        <span>{item.category}</span> | <span>{item.pubDate}</span>
                     </p>
                     <p className="my-4 text-gray-500 text-xs">{item.description?.split('\n')[1]}</p>
                     <a href={item.link} target="_blank" rel="noopener noreferrer"

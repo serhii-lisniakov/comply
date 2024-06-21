@@ -1,5 +1,4 @@
 import {parseString} from "xml2js";
-import sortBy from "lodash.sortby";
 
 const cors = "https://cors.eu.org/";
 const url = "fca.org.uk/news/rss.xml";
@@ -20,7 +19,7 @@ export const fetchFeed = async (callback) => {
 };
 
 const mapItems = (items) => {
-    return sortBy(items.map(i => ({
+    return items.map(i => ({
         category: i.category[0],
         creator: i["dc:creator"][0],
         description: i.description[0],
@@ -28,7 +27,7 @@ const mapItems = (items) => {
         link: i.link[0],
         pubDate: i.pubDate[0],
         title: i.title[0]
-    })), i => parseDateString(i.pubDate)).reverse();
+    })).sort((a, b) => parseDateString(a.pubDate).getTime() - parseDateString(b.pubDate).getTime()).reverse();
 };
 
 function parseDateString(dateString) {
