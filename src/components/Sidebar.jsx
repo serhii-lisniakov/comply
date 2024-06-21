@@ -1,4 +1,3 @@
-import {ROUTE_COMPLIANCE_MEETUPS, ROUTE_NEWSFEED} from "../router.jsx";
 import { NavLink } from "react-router-dom";
 import {useScript} from "../hooks/useScript.jsx";
 
@@ -18,13 +17,13 @@ export const Sidebar = () => {
 
             <p className="uppercase text-xs text-gray-600 mb-4 tracking-wider">Favourites</p>
 
-            <NavLink to={ROUTE_NEWSFEED}
+            <NavLink to="newsfeed"
                className="aria-[current=page]:text-teal-600 aria-[current=page]:text-teal-600 mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
                 <i className="fad fa-chart-pie text-xs mr-2"></i>
                 Newsfeed
             </NavLink>
 
-            <NavLink to={ROUTE_COMPLIANCE_MEETUPS}
+            <NavLink to="compliance-meetups"
                className="aria-[current=page]:text-teal-600 mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
                 <i className="fad fa-shopping-cart text-xs mr-2"></i>
                 Compliance Meetups
@@ -80,7 +79,7 @@ export const Sidebar = () => {
             </NavLink>
 
 
-            <NavLink to="alert"
+            <NavLink to="alerts"
                className="aria-[current=page]:text-teal-600 mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
                 <i className="fad fa-whistle text-xs mr-2"></i>
                 alerts

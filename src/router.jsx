@@ -3,9 +3,10 @@ import ErrorPage from "./pages/error.jsx";
 import App from "./App.jsx";
 import {NewsFeedPage} from "./pages/NewsFeed.jsx";
 import {ComplianceMeetupsPage} from "./pages/ComplianceMeetups.jsx";
-
-export const ROUTE_NEWSFEED = 'newsfeed';
-export const ROUTE_COMPLIANCE_MEETUPS = 'compliance-meetups';
+import {EmailPage} from "./pages/Email.jsx";
+import {Typography} from "./pages/Typography.jsx";
+import {Alerts} from "./pages/Alerts.jsx";
+import {Buttons} from "./pages/Buttons.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -17,15 +18,31 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <Navigate replace to={ROUTE_NEWSFEED}/>,
+                        element: <Navigate replace to="newsfeed"/>,
                     },
                     {
-                        path: `${ROUTE_NEWSFEED}`,
+                        path: 'newsfeed',
                         element: <NewsFeedPage/>,
                     },
                     {
-                        path: `${ROUTE_COMPLIANCE_MEETUPS}`,
+                        path: 'compliance-meetups',
                         element: <ComplianceMeetupsPage/>,
+                    },
+                    {
+                        path: 'email',
+                        element: <EmailPage/>,
+                    },
+                    {
+                        path: 'typography',
+                        element: <Typography/>,
+                    },
+                    {
+                        path: 'alerts',
+                        element: <Alerts/>,
+                    },
+                    {
+                        path: 'buttons',
+                        element: <Buttons/>,
                     },
                 ]
             },
