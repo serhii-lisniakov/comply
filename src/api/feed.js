@@ -27,13 +27,5 @@ const mapItems = (items) => {
         link: i.link[0],
         pubDate: i.pubDate[0],
         title: i.title[0]
-    })).sort((a, b) => parseDateString(a.pubDate).getTime() - parseDateString(b.pubDate).getTime()).reverse();
+    }));
 };
-
-function parseDateString(dateString) {
-    const [datePart, timePart] = dateString.split(" - ");
-    const [dayOfWeek, month, date, year] = datePart.split(" ");
-    const [hour, minute] = timePart.split(":");
-    const dateObject = new Date(`${month} ${date}, ${year} ${hour}:${minute}:00`);
-    return dateObject;
-}
