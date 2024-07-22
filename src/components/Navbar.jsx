@@ -11,7 +11,7 @@ export const Navbar = memo(() => {
 
         <div className="flex-none w-56 flex flex-row items-center">
             <img src="img/logo.png" className="w-10 flex-none" />
-            <strong className="capitalize ml-2 flex-1">comply</strong>
+            <strong className="capitalize ml-2 flex-1">ComplyFS</strong>
 
             <button id="sliderBtn" className="flex-none text-right text-gray-900 hidden md:block">
                 <i className="fad fa-list-ul"></i>
